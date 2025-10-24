@@ -7,3 +7,9 @@ The working model for the sine wave generator is working:
 ![it works](docs/sinegtk.png)
 
 I unfortunately still don't have a laptop so can't run it on Vbuddy currently, but *definitely* will have one by next week, so will add all the Vbuddy integration things then.
+
+## Task 2
+
+Both sine and cosine waves can be generated:
+
+![it also works](docs/sineandcosgtk.png)
