@@ -1,5 +1,9 @@
-# IAC Labs
+# Lab 2
 
-I've placed each lab session in its own branch - please use the list of links below or the GitHub branch switching thing to see my lab work.
+## Task 1
 
-- [Lab 1](https://github.com/georgerob801/eie-y2-iac-labs/tree/lab1)
+The working model for the sine wave generator is working:
+
+![it works](docs/sinegtk.png)
+
+I unfortunately still don't have a laptop so can't run it on Vbuddy currently, but *definitely* will have one by next week, so will add all the Vbuddy integration things then.
