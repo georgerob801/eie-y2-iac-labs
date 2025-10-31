@@ -16,6 +16,20 @@ Got the counter running and displaying the value on the Vbuddy!
 
 ![vbuddy working](docs/task2.jpg)
 
+### Test Yourself Challenges
+
+Made the requested modifications which pretty much just involved adding this line:
+```systemverilog
+logic [WIDTH - 1:0] increment = dir == 1'b0 ? {{WIDTH-1{1'b0}}, en} : {{WIDTH{en}}};
+```
+and then using `increment` as the value that gets added to count in the `always_ff` block. 
+
+It works, and you can now plan budget Geometry Dash on the Vbuddy.
+
 ## Task 3
 
-(see above)
+Got both step 1 and 2 done, viewable in seperate commits in [task 3](task3).
+
+## Task 4
+
+Vbuddy counts up when the button is pressed, displaying the result through binary coded decimal.
