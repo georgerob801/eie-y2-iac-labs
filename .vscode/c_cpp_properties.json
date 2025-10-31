@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/local/user/share/verilator/include"
+                "/usr/local/share/verilator/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
