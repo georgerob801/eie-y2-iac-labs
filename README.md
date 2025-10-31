@@ -6,7 +6,11 @@ The working model for the sine wave generator is working:
 
 ![it works](docs/sinegtk.png)
 
-I unfortunately still don't have a laptop so can't run it on Vbuddy currently, but *definitely* will have one by next week, so will add all the Vbuddy integration things then.
+and is also working in person on the Vbuddy.
+
+### Test Yourself Challenge
+
+Setting the increment to the value provided by `vbdValue()` resulted in being able to change the frequency of the sine wave reliably up to a value of 16, after which the structure of the sine wave breaks down.
 
 ## Task 2
 

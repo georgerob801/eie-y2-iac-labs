@@ -24,7 +24,7 @@ int main(int argc, char** argv, char** env) {
     top->en = 1;
     top->incr = 1;
 
-    for (i = 0; i < 3000; i++) {
+    for (i = 0; i < 1'000'000; i++) {
         for (clk = 0; clk < 2; clk++) {
             tfp->dump(2 * i + clk);
             top->clk = !top->clk;
@@ -35,7 +35,7 @@ int main(int argc, char** argv, char** env) {
 
         vbdPlot(top->dout, 0, 255);
 
-        if (Verilated::gotFinish()) exit(0);
+        if (Verilated::gotFinish() || vbdGetkey() == 'q') exit(0);
     }
     tfp->close();
     exit(0);
