@@ -17,3 +17,11 @@ Setting the increment to the value provided by `vbdValue()` resulted in being ab
 Both sine and cosine waves can be generated:
 
 ![it also works](docs/sineandcosgtk.png)
+
+## Task 3
+
+Everything works as required:
+
+![it once again works](docs/delay.jpg)
+
+(`cyc` shows 16 as i set it to show the amount of cycles for delay that are being used)
