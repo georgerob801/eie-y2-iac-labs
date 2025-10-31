@@ -16,18 +16,27 @@ int main(int argc, char** argv, char** env) {
     top->trace(tfp, 99);
     tfp->open("sinegen.vcd");
 
+    if (vbdOpen() != 1) return -1;
+    vbdHeader("Lab 2: sinegen");
+
     top->clk = 1;
     top->rst = 1;
     top->en = 1;
     top->incr = 1;
     top->offset = 64;
 
-    for (i = 0; i < 300; i++) {
+    for (i = 0; i < 1'000'000; i++) {
         for (clk = 0; clk < 2; clk++) {
             tfp->dump(2 * i + clk);
             top->clk = !top->clk;
             top->eval();
         }
+
+        top->offset = vbdValue();
+
+        vbdPlot(top->dout1, 0, 255);
+        vbdPlot(top->dout2, 0, 255);
+    
         top->rst = 0;
         if (Verilated::gotFinish()) exit(0);
     }
