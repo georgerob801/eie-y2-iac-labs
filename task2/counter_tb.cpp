@@ -24,7 +24,7 @@ int main(int argc, char** argv, char** env) {
     top->rst = 1;
     top->en = 1;
 
-    for (i = 0; i < 300; i++) {
+    for (i = 0; i < 3000; i++) {
         for (clk = 0; clk < 2; clk++) {
             tfp->dump(2 * i + clk);
             top->clk = !top->clk;
@@ -39,7 +39,7 @@ int main(int argc, char** argv, char** env) {
         vbdPlot(int(top->count), 0, 255);
 
         top->rst = 0;
-        top->en = vbdFlag();
+        top->dir = vbdFlag();
         if (Verilated::gotFinish()) exit(0);
     }
 
