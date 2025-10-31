@@ -23,7 +23,6 @@ int main(int argc, char** argv, char** env) {
 
     top->clk = 1;
     top->rst = 1;
-    top->v = 127;
 
     for (i = 0; i < 3000; i++) {
         for (clk = 0; clk < 2; clk++) {
@@ -32,12 +31,7 @@ int main(int argc, char** argv, char** env) {
             top->eval();
         }
 
-        top->ld = 0;
-
-        if (vbdFlag() == 1) {
-            top->v = vbdValue();
-            top->ld = 1;
-        }
+        while (vbdFlag() == 0) { }
 
         // send count value to vbuddy
         // vbdHex(4, (int(top->count) >> 16) & 0xf);
