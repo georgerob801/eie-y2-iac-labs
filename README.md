@@ -10,10 +10,12 @@ GTKWave working:
 
 After making the modifications, I don't see any changes other than the expected change in the value the counter reaches changing? I did also remove the RST conditions to allow the value to get high enough though... not sure. If there's a way of getting the current count value out of the model instead of just sending certain signals on predetermined clock cycles it would probably be easier to check these things, but currently I can't check if such a feature exists as my VSCode Intellisense is refusing to acknowledge the existence of any of the header files. I love Intellisense.
 
-### Task 2
+## Task 2
 
-(currently running remotely so need to wait until i get a laptop, apologies)
+Got the counter running and displaying the value on the Vbuddy!
 
-### Task 3
+![vbuddy working](docs/task2.jpg)
+
+## Task 3
 
 (see above)
